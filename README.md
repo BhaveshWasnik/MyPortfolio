@@ -3,11 +3,11 @@
 
 A modern, responsive developer portfolio built with **React**, **Vite**, **Tailwind CSS**, and **Framer Motion** to showcase my projects, skills, and experience.
 
-## 🚀 Live Demo
+## 🚀 **Live Demo**
 
 🔗 https://your-vercel-link.vercel.app
 
-## 📂 GitHub Repository
+## **📂 GitHub Repository**
 
 🔗 https://github.com/BhaveshWasnik/MyPortfolio
 
@@ -75,9 +75,9 @@ http://localhost:5173
 
 **Bhavesh Wasnik**
 
-- GitHub: https://github.com/BhaveshWasnik
-- LinkedIn: https://www.linkedin.com/in/bhavesh-wasnik
-- Email: bhaveshwasnik25@gmail.com
+- **GitHub:** https://github.com/BhaveshWasnik
+- **LinkedIn:** https://www.linkedin.com/in/bhavesh-wasnik
+- **Email:** bhaveshwasnik25@gmail.com
 
 ---
 
