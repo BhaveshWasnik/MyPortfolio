@@ -13,6 +13,34 @@ const Footer = () => {
     window.open(url, "_blank", "noopener,noreferrer");
   };
 
+  const handleEmailClick = () => {
+  const subject = "Portfolio Inquiry";
+  const body = `Hello Bhavesh,
+
+I visited your portfolio and would like to connect regarding...
+
+Name:
+Company:
+Email:
+Message:
+`;
+
+  const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+  if (isMobile) {
+    window.location.href = `mailto:bhaveshwasnik25@gmail.com?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(body)}`;
+  } else {
+    window.open(
+      `https://mail.google.com/mail/?view=cm&fs=1&to=bhaveshwasnik25@gmail.com&su=${encodeURIComponent(
+        subject
+      )}&body=${encodeURIComponent(body)}`,
+      "_blank",
+      "noopener,noreferrer"
+    );
+  }
+};
   return (
     <footer className="w-full bg-transparent text-gray-200 py-10 px-5 sm:px-8 lg:px-12">
       <div className="w-full border-t border-[#0b70eb40] my-8">
@@ -80,15 +108,19 @@ const Footer = () => {
               <span className="text-sm sm:text-base">Download Resume</span>
             </a>
 
-            <a
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=bhaveshwasnik25@gmail.com&su=Portfolio%20Inquiry&body=Hello%20Bhavesh,%0A%0AI%20visited%20your%20portfolio%20and%20would%20like%20to%20connect%20regarding...%0A%0AName:%20%0ACompany:%20%0AEmail:%20%0AMessage:%20"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 hover:text-cyan-400 transition duration-300 "
-            >
-              <CiMail size={20} />
-              <span className="text-sm sm:text-base">  bhaveshwasnik25@gmail.com</span>
-            </a>
+          <a
+  href="#"
+  onClick={(e) => {
+    e.preventDefault();
+    handleEmailClick();
+  }}
+  className="flex items-center gap-2 hover:text-cyan-400 transition duration-300"
+>
+  <CiMail size={20} />
+  <span className="text-sm sm:text-base">
+    bhaveshwasnik25@gmail.com
+  </span>
+</a>
           </div>
         </div>
 
